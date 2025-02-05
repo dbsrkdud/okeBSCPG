@@ -21,7 +21,8 @@
         <property name="driverClassName" value="${Globals.postgres.DriverClassName}"/>
         <property name="url" value="${Globals.postgres.Url}" />
         <property name="username" value="${Globals.postgres.UserName}"/>
-        <property name="password" value="${Globals.postgres.Password}}"/>
+        <property name="password" value="${Globals.postgres.Password}"/>
+        <property name="validationQuery" value="select 1"/>
     </bean>
 
 </beans>
