@@ -65,5 +65,5 @@ prevBtn.addEventListener('click', function() {
 
 
 homeBtn.addEventListener('click', function() {
-   location.href = 'index.do';
+   location.href = 'main.do';
 });

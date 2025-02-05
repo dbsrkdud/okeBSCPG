@@ -21,7 +21,12 @@ public class SampleController {
 
     @RequestMapping("/index.do")
     public String index() {
-        return "index";
+        return "main";
+    }
+
+    @RequestMapping("/main.do")
+    public String main() {
+        return "main";
     }
 
     @RequestMapping("/create.do")
