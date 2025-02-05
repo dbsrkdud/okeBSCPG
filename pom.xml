@@ -61,6 +61,26 @@
       <version>${org.egovframe.rte.version}</version>
     </dependency>
     <dependency>
+      <groupId>org.egovframe.rte</groupId>
+      <artifactId>org.egovframe.rte.fdl.excel</artifactId>
+      <version>${org.egovframe.rte.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.egovframe.rte</groupId>
+      <artifactId>org.egovframe.rte.bat.core</artifactId>
+      <version>${org.egovframe.rte.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.egovframe.rte</groupId>
+      <artifactId>org.egovframe.rte.fdl.crypto</artifactId>
+      <version>${org.egovframe.rte.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.egovframe.rte</groupId>
+      <artifactId>org.egovframe.rte.fdl.access</artifactId>
+      <version>${org.egovframe.rte.version}</version>
+    </dependency>
+    <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>3.8.1</version>
@@ -144,6 +164,11 @@
       <groupId>org.apache.commons</groupId>
       <artifactId>commons-lang3</artifactId>
       <version>3.12.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.postgresql</groupId>
+      <artifactId>postgresql</artifactId>
+      <version>42.7.5</version>
     </dependency>
   </dependencies>
   <build>
