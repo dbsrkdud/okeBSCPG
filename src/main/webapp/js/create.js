@@ -21,17 +21,19 @@ document.addEventListener('DOMContentLoaded', function() {
 // Next 버튼 클릭
 nextBtn.addEventListener('click', function() {
 
-    if (nextBtn.innerText === "Next") {
+    prevBtn.style.display = 'block';
+
+    if (nextBtn.innerText === "다음") {
         index += 1;
 
         if (index === 2) {
             gitPage.style.display = 'none';
-            baseImagePage.style.display = 'flex';
+            baseImagePage.style.display = 'block';
             settingPage.style.display = 'none'
         } else if (index === 3) {
             gitPage.style.display = 'none';
             baseImagePage.style.display = 'none';
-            settingPage.style.display = 'flex';
+            settingPage.style.display = 'block';
             nextBtn.innerText = '완료';
             return;
         }
@@ -51,14 +53,15 @@ prevBtn.addEventListener('click', function() {
         alert('처음입니다.');
     } else if (index === 2) {
         gitPage.style.display = 'none';
-        baseImagePage.style.display = 'flex';
+        baseImagePage.style.display = 'block';
         settingPage.style.display = 'none'
-        nextBtn.innerText = 'Next';
+        nextBtn.innerText = '다음';
     } else if (index === 1) {
-        gitPage.style.display = 'flex';
+        gitPage.style.display = 'block';
         baseImagePage.style.display = 'none';
         settingPage.style.display = 'none';
-        nextBtn.innerText = 'Next';
+        nextBtn.innerText = '다음';
+        prevBtn.style.display = 'none';
     }
 
 });
