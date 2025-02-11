@@ -45,28 +45,33 @@
                 </nav>
                 <!-- End of Topbar -->
                 <div class="container-fluid">
-                    <div class="row" id="git_page" style="height: 500px;">
+                    <div class="row" id="docker_file_page" style="height: 500px;">
                         <div class="col-md-6 mb-4" style="margin: auto">
                             <div class="card border-left-primary shadow h-100 py-2">
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-3" style="font-size: 2.0em">GIT URL</div>
-                                            <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
-                                                   aria-label="Search" aria-describedby="basic-addon2">
+                                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-3" style="font-size: 2.0em">DOCKER FILE</div>
+<%--                                            <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."--%>
+<%--                                                   aria-label="Search" aria-describedby="basic-addon2">--%>
+                                            <textarea class="form-control btn-light border-0 small" style="height: 300px"></textarea>
                                         </div>
+                                    </div>
+                                    <div class="d-sm-flex align-items-center justify-content-end mt-3 mb-5">
+                                        <button class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm mr-1" id="build_btn">build</button>
+                                        <button class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" id="push_btn" disabled="disabled">push</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row" id="base_image_page" style="display: none; height: 500px">
+                    <div class="row" id="deployment_page" style="display: none; height: 500px">
                         <div class="col-md-6 mb-4" style="margin: auto">
                             <div class="card border-left-success shadow h-100 py-2">
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-success text-uppercase mb-3" style="font-size: 2.0em">BASE IMAGE</div>
+                                            <div class="text-xs font-weight-bold text-success text-uppercase mb-3" style="font-size: 2.0em">DEPLOYMENT</div>
                                             <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
                                                    aria-label="Search" aria-describedby="basic-addon2">
                                         </div>
@@ -75,13 +80,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row" id="setting_page" style="display: none; height: 500px">
+                    <div class="row" id="service_page" style="display: none; height: 500px">
                         <div class="col-md-6 mb-4" style="margin: auto">
                             <div class="card border-left-info shadow h-100 py-2">
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-info text-uppercase mb-3" style="font-size: 2.0em">SETTING</div>
+                                            <div class="text-xs font-weight-bold text-info text-uppercase mb-3" style="font-size: 2.0em">SERVICE</div>
                                             <div class="col-auto mb-2">CPU
                                                 <input type="text" class="form-control bg-light border-0 small" aria-describedby="basic-addon2">
                                             </div>
@@ -94,9 +99,24 @@
                             </div>
                         </div>
                     </div>
+                    <div class="row" id="ingress_page" style="display: none; height: 500px">
+                        <div class="col-md-6 mb-4" style="margin: auto">
+                            <div class="card border-left-warning shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-warning text-uppercase mb-3" style="font-size: 2.0em">INGRESS</div>
+                                            <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
+                                                   aria-label="Search" aria-describedby="basic-addon2">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="d-sm-flex align-items-center justify-content-center mt-3 mb-5">
                         <button class="btn btn-sm btn-sm btn-primary shadow-sm" id="prev_btn" style="display: none">이전</button>&nbsp;&nbsp;
-                        <button class="btn btn-sm btn-sm btn-primary shadow-sm" id="next_btn">다음</button>
+                        <button class="btn btn-sm btn-sm btn-primary shadow-sm" id="next_btn" disabled="disabled">다음</button>
                     </div>
                 </div>
             </div>
