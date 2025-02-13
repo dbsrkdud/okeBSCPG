@@ -89,11 +89,11 @@ ingressCreateBtn.addEventListener('click', function() {
 // Next 버튼 클릭
 nextBtn.addEventListener('click', function() {
 
+    prevBtn.style.display = 'block';
     nextBtn.disabled = true;
 
-    prevBtn.style.display = 'block';
-
     if (nextBtn.innerText === "다음") {
+
         index += 1;
 
         if (index === 2) {
