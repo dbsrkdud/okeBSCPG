@@ -76,6 +76,9 @@
                                                    aria-label="Search" aria-describedby="basic-addon2">
                                         </div>
                                     </div>
+                                    <div class="d-sm-flex align-items-center justify-content-end mt-3 mb-5">
+                                        <button class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm mr-1" id="deploy_create_btn">생성</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -95,6 +98,9 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="d-sm-flex align-items-center justify-content-end mt-3 mb-5">
+                                        <button class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm mr-1" id="service_create_btn">생성</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -109,6 +115,9 @@
                                             <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
                                                    aria-label="Search" aria-describedby="basic-addon2">
                                         </div>
+                                    </div>
+                                    <div class="d-sm-flex align-items-center justify-content-end mt-3 mb-5">
+                                        <button class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm mr-1" id="ingress_create_btn">생성</button>
                                     </div>
                                 </div>
                             </div>

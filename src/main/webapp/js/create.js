@@ -7,9 +7,16 @@ const homeBtn = document.querySelector('#home_btn');
 
 const buildBtn = document.querySelector('#build_btn');
 const pushBtn = document.querySelector('#push_btn');
+const deployCreateBtn = document.querySelector('#deploy_create_btn')
+const serviceCreateBtn = document.querySelector('#service_create_btn');
+const ingressCreateBtn = document.querySelector('#ingress_create_btn');
 
 let buildBtnFlag = false;
 let pushBtnFlag = false;
+let deployCreateBtnFlag = false;
+let serviceCreateBtnFlag = false;
+let ingressCreateBtnFlag = false;
+
 
 const prevBtn = document.querySelector('#prev_btn');
 const nextBtn = document.querySelector('#next_btn');
@@ -43,8 +50,46 @@ pushBtn.addEventListener('click', function(){
 
 })
 
+// deploy 생성 버튼 클릭
+deployCreateBtn.addEventListener('click', function() {
+
+    // success 일 때
+    deployCreateBtnFlag = true;
+
+    if (deployCreateBtnFlag) {
+        nextBtn.disabled = false;
+    }
+
+})
+
+// service 생성 버튼 클릭
+serviceCreateBtn.addEventListener('click', function() {
+
+    // success 일 때
+    serviceCreateBtnFlag = true;
+
+    if (serviceCreateBtnFlag) {
+        nextBtn.disabled = false;
+    }
+
+})
+
+// ingress 생성 버튼 클릭
+ingressCreateBtn.addEventListener('click', function() {
+
+    // success 일 때
+    ingressCreateBtnFlag = true;
+
+    if (ingressCreateBtnFlag) {
+        nextBtn.disabled = false;
+    }
+
+})
+
 // Next 버튼 클릭
 nextBtn.addEventListener('click', function() {
+
+    nextBtn.disabled = true;
 
     prevBtn.style.display = 'block';
 
@@ -76,6 +121,8 @@ nextBtn.addEventListener('click', function() {
 
 // Prev 버튼 클릭
 prevBtn.addEventListener('click', function() {
+
+    nextBtn.disabled = false;
 
     index -= 1;
 
