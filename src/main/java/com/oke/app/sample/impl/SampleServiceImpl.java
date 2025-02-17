@@ -18,6 +18,11 @@ public class SampleServiceImpl implements SampleService {
 
     @Override
     public List<MemberVo> findAll() {
-        return commonDao.selectList("member.memberSelect");
+        return commonDao.selectList("member.memberSelectList");
+    }
+
+    @Override
+    public MemberVo findMember() {
+        return commonDao.selectOne("member.memberSelect");
     }
 }

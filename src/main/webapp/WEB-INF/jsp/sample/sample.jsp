@@ -17,6 +17,15 @@
     <script type="text/javascript" src="${pageContext.request.contextPath}/js/sample.js" ></script>
 </head>
 <body>
-샘플페이지
+<div>
+    <h1>MemberList</h1>
+    <c:forEach var="result" items="${memberList}" varStatus="status">
+        <div>${result.id}</div>
+    </c:forEach>
+
+    <h1>Member</h1>
+    <div>${member.id}</div>
+
+</div>
 </body>
 </html>
